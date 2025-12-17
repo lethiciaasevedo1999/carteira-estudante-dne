@@ -161,14 +161,28 @@ body{
 }
 
 .no-copy {
-  pointer-events: none;   /* não clicável */
-  user-select: none;      /* não selecionável */
+  pointer-events: none;        /* não clicável */
+  user-select: none;           /* não selecionável */
+  text-decoration: none !important;   /* remove sublinhado */
+  -webkit-text-decoration: none !important; /* remove sublinhado no iOS */
+  -webkit-text-fill-color: var(--muted);    /* mantém cor correta no iOS */
+  color: var(--muted);                    /* cor padrão */
 }
 
 .row span {
   color: var(--muted);      /* cor original */
   text-decoration: none;    /* remove sublinhado azul */
   -webkit-text-fill-color: var(--muted); /* iOS */
+}
+
+#cieNumber {
+  pointer-events: none;            /* não clicável */
+  user-select: none;               /* não selecionável */
+  text-decoration: none !important;       /* remove sublinhado */
+  -webkit-text-decoration: none !important; /* remove sublinhado no iOS */
+  -webkit-text-fill-color: var(--ink);    /* mantém cor correta no iOS */
+  color: var(--ink);                        /* cor padrão */
+  display: inline-block;                     /* garante estilo correto */
 }
 
 </style>
