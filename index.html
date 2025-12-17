@@ -92,7 +92,7 @@ body{margin:0;min-height:100vh;display:grid;place-items:center;background:#1e56f
 .mini{margin:18px 20px;background:#bff1ea;border-radius:16px;padding:12px;display:flex;align-items:center;gap:10px}
 .mini .photo{width:56px;height:56px}
 .mini .qr{width:46px;height:46px}
-.year{margin-left:auto;font-weight:800;color:#1f4cff}
+.year{margin-left:auto;font-weight:800;color:#2b979b}
 
 .demo{position:absolute;inset:0;display:grid;place-items:center;font-size:46px;font-weight:900;letter-spacing:4px;color:rgba(255,255,255,.35);transform:rotate(-20deg);pointer-events:none}
 
@@ -160,6 +160,12 @@ body{
   z-index:10;
 }
 
+.no-copy {
+  pointer-events: none;   /* não clicável */
+  user-select: none;      /* não selecionável */
+}
+
+
 </style>
 </head>
 <body>
@@ -205,9 +211,9 @@ body{
         <div class="row">Ins. Ensino:<span> Univ Cidade de Sao Paulo - Tatuape</div>
         <div class="row">Curso:<span> Biomedicina</span></div>
         <div class="row">Nível de Ensino:<span> SUPERIOR</span></div>
-        <div class="row">CPF:<span style="pointer-events:none"> 34503809822</span></div>
+        <div class="row">CPF:<span class="no-copy"> 34503809822</span></div>
         <div class="row">Data de Nasc.:<span> 12/03/1997</span></div>
-        <div class="row">Bilhete Único:<span style="pointer-events:none"> 0321884470</span></div>
+        <div class="row">Bilhete Único:<span class="no-copy"> 0321884470</span></div>
 
       </div>
     </div>
